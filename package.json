@@ -1,0 +1,24 @@
+{
+  "name": "bdd-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melvinlee/bdd-mocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melvinlee/bdd-mocha/issues"
+  },
+  "homepage": "https://github.com/melvinlee/bdd-mocha#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^2.5.3"
+  }
+}
