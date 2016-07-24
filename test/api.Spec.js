@@ -20,3 +20,18 @@ describe('When calling http GET /api/tunnel', () =>{
     });
 });
 
+describe('When calling htt GET /api/tunnel by id', () =>{
+
+    it('should return GET 1 tunnel', (done) => {
+        chai.request(url)
+        .get('api/tunnel/1')
+        .set('accept','application/json')
+        .end((err,res) => {
+            res.should.have.status(200);
+            res.should.be.json;
+            res.body.should.have.property('id');
+            done();
+        });
+    });
+});
+
